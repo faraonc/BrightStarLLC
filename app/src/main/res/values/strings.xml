@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Bright Star LLC</string>
+
+    <!--Image Descriptions-->
+    <string name="logo_desc1">"Bright Start company logo."</string>
+    <string name="logo_desc2">"Bright Start company logo without text."</string>
+
+    <!--Text Views-->
+    <string name="company_desc">"Business IT Solutions"</string>
+    <string name="owner_name">Conard James B. Faraon</string>
+    <string name="job_title">Full Stack Developer</string>
+    <string name="phone_info">"619&#8212;206&#8212;4257"</string>
+    <string name="email_info">"faraonc@brightstar.com"</string>
+    <string name="web_info">"www.brightstar.com"</string>
 </resources>

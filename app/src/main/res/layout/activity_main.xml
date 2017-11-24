@@ -1,18 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.conardjames.brightstarllc.MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        tools:context="com.example.conardjames.brightstarllc.MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+        <!--Inspiration-->
+        <!--http://cardobserver.com/gallery/illustration-style-card-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/company_desc"
+            android:textAppearance="?android:textAppearanceInverse"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:contentDescription="@string/logo_desc1"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bs_01" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/owner_name"
+            android:textAppearance="?android:textAppearanceInverse"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/job_title"
+            android:textAppearance="?android:textAppearanceInverse"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/phone_info"
+            android:textAppearance="?android:textAppearanceLargeInverse" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:padding="4dp"
+            android:text="@string/email_info"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLargeInverse" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:contentDescription="@string/logo_desc2"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bs_02" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:padding="4dp"
+            android:text="@string/web_info"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceInverse"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</ScrollView>
